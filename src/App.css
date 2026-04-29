@@ -55,6 +55,22 @@
   font-size: 0.95rem;
 }
 
+.test-button {
+  margin-bottom: 1.25rem;
+  padding: 0.5rem 0.85rem;
+  font: inherit;
+  font-weight: 500;
+  color: var(--text-h);
+  background: var(--accent-bg);
+  border: 1px solid var(--accent-border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.test-button:hover {
+  filter: brightness(1.03);
+}
+
 .list {
   list-style: none;
   margin: 0;
