@@ -21,6 +21,10 @@ export default function App() {
     <main className="app">
       <h1>To-do</h1>
 
+      <button type="button" onClick={() => console.log("How's it going?")}>
+        Test
+      </button>
+
       <form className="add" onSubmit={addItem}>
         <input
           type="text"
