@@ -17,9 +17,17 @@ export default function App() {
     setItems((prev) => prev.filter((item) => item.id !== id))
   }
 
+  function logWeatherQuestion() {
+    console.log("What's the weather?")
+  }
+
   return (
     <main className="app">
       <h1>To-do</h1>
+
+      <button className="test-button" type="button" onClick={logWeatherQuestion}>
+        Test Weather
+      </button>
 
       <form className="add" onSubmit={addItem}>
         <input
