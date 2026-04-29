@@ -49,6 +49,22 @@
   filter: brightness(1.03);
 }
 
+.test {
+  margin: 0 0 1.25rem;
+  padding: 0.5rem 0.85rem;
+  font: inherit;
+  font-weight: 500;
+  color: var(--text-h);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.test:hover {
+  background: var(--social-bg);
+}
+
 .empty {
   margin: 0;
   color: var(--text-muted);
