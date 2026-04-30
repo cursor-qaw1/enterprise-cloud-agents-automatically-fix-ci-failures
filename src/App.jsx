@@ -17,9 +17,17 @@ export default function App() {
     setItems((prev) => prev.filter((item) => item.id !== id))
   }
 
+  function logTestMessage() {
+    console.log('Good evening folks!')
+  }
+
   return (
     <main className="app">
       <h1>To-do</h1>
+
+      <button className="test-button" type="button" onClick={logTestMessage}>
+        Test Button
+      </button>
 
       <form className="add" onSubmit={addItem}>
         <input
