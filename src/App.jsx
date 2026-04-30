@@ -17,6 +17,10 @@ export default function App() {
     setItems((prev) => prev.filter((item) => item.id !== id))
   }
 
+  function handleWeatherTestClick() {
+    console.log("What's the weather?")
+  }
+
   return (
     <main className="app">
       <h1>To-do</h1>
@@ -31,6 +35,14 @@ export default function App() {
         />
         <button type="submit">Add</button>
       </form>
+
+      <button
+        className="weather-test"
+        type="button"
+        onClick={handleWeatherTestClick}
+      >
+        Test weather
+      </button>
 
       {items.length === 0 ? (
         <p className="empty">No tasks yet.</p>
