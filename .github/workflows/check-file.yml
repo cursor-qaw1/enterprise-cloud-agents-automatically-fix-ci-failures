@@ -14,7 +14,7 @@ jobs:
       - name: Check for required file
         id: check
         run: |
-          REQUIRED_FILE="vite.config.js"  # ← change this
+          REQUIRED_FILE="vite.config.js"
 
           if [ -f "$REQUIRED_FILE" ]; then
             echo "found=true" >> $GITHUB_OUTPUT
