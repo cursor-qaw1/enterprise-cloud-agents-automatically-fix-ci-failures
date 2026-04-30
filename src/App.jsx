@@ -17,6 +17,10 @@ export default function App() {
     setItems((prev) => prev.filter((item) => item.id !== id))
   }
 
+  function logGreeting() {
+    console.log('Good evening folks!')
+  }
+
   return (
     <main className="app">
       <h1>To-do</h1>
@@ -31,6 +35,10 @@ export default function App() {
         />
         <button type="submit">Add</button>
       </form>
+
+      <button className="test-button" type="button" onClick={logGreeting}>
+        Test Button
+      </button>
 
       {items.length === 0 ? (
         <p className="empty">No tasks yet.</p>
