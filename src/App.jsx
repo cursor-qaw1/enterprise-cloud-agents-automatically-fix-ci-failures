@@ -5,6 +5,10 @@ export default function App() {
   const [items, setItems] = useState([])
   const [draft, setDraft] = useState('')
 
+  function logGoodEvening() {
+    console.log('Good evening folks!')
+  }
+
   function addItem(e) {
     e.preventDefault()
     const text = draft.trim()
@@ -20,6 +24,10 @@ export default function App() {
   return (
     <main className="app">
       <h1>To-do</h1>
+
+      <button className="test-button" type="button" onClick={logGoodEvening}>
+        Test button
+      </button>
 
       <form className="add" onSubmit={addItem}>
         <input
